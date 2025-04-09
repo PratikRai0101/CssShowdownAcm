@@ -8,6 +8,7 @@
     <title>ACM YCCE - Advancing Computing as a Science & Profession</title>
 
     <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/style.css">
 </head>
 
@@ -25,57 +26,60 @@
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Resources</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
 
-            <!-- Placeholder for a responsive menu icon -->
-            <div>
-                <i></i>
+            <!-- Responsive menu icon -->
+            <div class="menu-icon">
+                <i class="fas fa-bars"></i>
             </div>
         </div>
     </header>
 
     <!-- ================= HERO SECTION ================= -->
-    <section>
-        <div>
+    <section id="home" style="background: url('/assets/hero-bg.jpg') no-repeat center center/cover color: #151525; color: #151525; text-align: center; padding: 100px 20px;">
+        <div style="max-width: 800px; margin: 0 auto;">
+            <h1 style="font-size: 3rem; font-weight: bold; margin-bottom: 20px;">Welcome to ACM YCCE Student Chapter</h1>
+            <p style="font-size: 1.2rem; line-height: 1.6; margin-bottom: 30px;">
+                Advancing Computing as a Science & Profession at Your College of Computer Engineering.
+            </p>
             <div>
-                <h1>Welcome to ACM YCCE Student Chapter</h1>
-                <p>Advancing Computing as a Science & Profession at Your College of Computer Engineering</p>
-                <div>
-                    <a href="#">Learn More</a>
-                    <a href="#">Join Us</a>
-                </div>
+                <a href="#about" class="btn btn-primary" style="padding: 10px 20px; font-size: 1rem; margin-right: 10px; background-color: #007bff; color: #fff; text-decoration: none; border-radius: 5px;">Learn More</a>
+                <a href="#contact" class="btn btn-secondary" style="padding: 10px 20px; font-size: 1rem; background-color: #6c757d; color: #fff; text-decoration: none; border-radius: 5px;">Join Us</a>
             </div>
         </div>
     </section>
 
     <!-- ================= ABOUT SECTION ================= -->
-    <section>
-        <div>
+    <section id="about">
+        <div class="container">
             <h2>About ACM YCCE</h2>
             <div>
                 <div>
                     <!-- ACM Description -->
                     <p>The ACM YCCE Student Chapter is a vibrant community of computing enthusiasts at Your College of
-                        Computer Engineering...</p>
+                        Computer Engineering. We are dedicated to fostering professional growth, technical knowledge sharing,
+                        and building a collaborative network among students passionate about computing and information technology.
+                        Through workshops, seminars, hackathons, and community projects, we aim to bridge the gap between
+                        academic learning and industry demands.</p>
 
                     <!-- Highlights with Stats -->
-                    <div>
-                        <div>
+                    <div class="stats">
+                        <div class="stat-item">
                             <h3>200+</h3>
                             <p>Members</p>
                         </div>
-                        <div>
+                        <div class="stat-item">
                             <h3>50+</h3>
                             <p>Events Organized</p>
                         </div>
-                        <div>
+                        <div class="stat-item">
                             <h3>10+</h3>
                             <p>Projects Completed</p>
                         </div>
@@ -87,72 +91,72 @@
     </section>
 
     <!-- ================= UPCOMING EVENTS SECTION ================= -->
-    <section>
+    <section id="events">
         <div>
             <h2>Upcoming Events</h2>
-            <div>
+            <div class="events-container">
                 <!-- Event 1 -->
-                <div>
-                    <div>
+                <div class="event-card">
+                    <div class="event-date">
                         <span>15</span>
                         <span>OCT</span>
                     </div>
-                    <div>
+                    <div class="event-content">
                         <h3>HackYCCE 2023</h3>
                         <p><i class="far fa-clock"></i> 9:00 AM - 6:00 PM</p>
                         <p><i class="fas fa-map-marker-alt"></i> CS Department, YCCE</p>
-                        <p>Annual 24-hour hackathon...</p>
+                        <p>Annual 24-hour hackathon where teams compete to build innovative solutions to real-world problems.</p>
                         <a href="#">Register Now</a>
                     </div>
                 </div>
 
                 <!-- Event 2 -->
-                <div>
-                    <div>
+                <div class="event-card">
+                    <div class="event-date">
                         <span>28</span>
                         <span>OCT</span>
                     </div>
-                    <div>
+                    <div class="event-content">
                         <h3>Tech Talk: AI in Healthcare</h3>
                         <p><i class="far fa-clock"></i> 2:00 PM - 4:00 PM</p>
                         <p><i class="fas fa-map-marker-alt"></i> Seminar Hall, YCCE</p>
-                        <p>Guest lecture on AI applications in healthcare.</p>
+                        <p>Guest lecture on AI applications in healthcare by industry experts from leading tech companies.</p>
                         <a href="#">Learn More</a>
                     </div>
                 </div>
 
                 <!-- Event 3 -->
-                <div>
-                    <div>
+                <div class="event-card">
+                    <div class="event-date">
                         <span>05</span>
                         <span>NOV</span>
                     </div>
-                    <div>
+                    <div class="event-content">
                         <h3>Code Sprint Competition</h3>
                         <p><i class="far fa-clock"></i> 10:00 AM - 1:00 PM</p>
                         <p><i class="fas fa-map-marker-alt"></i> Computer Lab 3, YCCE</p>
-                        <p>Competitive programming event with challenges.</p>
+                        <p>Competitive programming event with challenges for beginners, intermediates, and advanced coders.</p>
                         <a href="#">Participate</a>
                     </div>
                 </div>
             </div>
-            <div>
+            <div class="view-all">
                 <a href="#">View All Events</a>
             </div>
         </div>
     </section>
 
     <!-- ================= TEAM SECTION ================= -->
-    <section>
+    <section id="team">
         <div>
             <h2>Our Team</h2>
             <p>Meet the dedicated students who make ACM YCCE possible</p>
-            <div>
+            <div class="team-container">
                 <!-- Team Member 1 -->
-                <div>
-                    <div>
+                <div class="team-member">
+                    <div class="member-image">
                         <img src="assets/team-member.webp" alt="Team Member">
-                        <div>
+                        <div class="social-links">
                             <!-- Social Media Links -->
                             <a href="#"><i class="fab fa-linkedin"></i></a>
                             <a href="#"><i class="fab fa-github"></i></a>
@@ -165,10 +169,10 @@
                 </div>
 
                 <!-- Team Member 2 -->
-                <div>
-                    <div>
+                <div class="team-member">
+                    <div class="member-image">
                         <img src="assets/team-member.webp" alt="Team Member">
-                        <div>
+                        <div class="social-links">
                             <a href="#"><i class="fab fa-linkedin"></i></a>
                             <a href="#"><i class="fab fa-github"></i></a>
                             <a href="#"><i class="fab fa-twitter"></i></a>
@@ -180,10 +184,10 @@
                 </div>
 
                 <!-- Team Member 3 -->
-                <div>
-                    <div>
+                <div class="team-member">
+                    <div class="member-image">
                         <img src="assets/team-member.webp" alt="Team Member">
-                        <div>
+                        <div class="social-links">
                             <a href="#"><i class="fab fa-linkedin"></i></a>
                             <a href="#"><i class="fab fa-github"></i></a>
                             <a href="#"><i class="fab fa-twitter"></i></a>
@@ -195,10 +199,10 @@
                 </div>
 
                 <!-- Team Member 4 -->
-                <div>
-                    <div>
+                <div class="team-member">
+                    <div class="member-image">
                         <img src="assets/team-member.webp" alt="Team Member">
-                        <div>
+                        <div class="social-links">
                             <a href="#"><i class="fab fa-linkedin"></i></a>
                             <a href="#"><i class="fab fa-github"></i></a>
                             <a href="#"><i class="fab fa-twitter"></i></a>
@@ -216,9 +220,9 @@
     <section id="contact">
         <div>
             <h2>Get In Touch</h2>
-            <div>
+            <div class="contact-container">
                 <!-- Contact Details -->
-                <div>
+                <div class="contact-info">
                     <h3>Contact Information</h3>
                     <div>
                         <i class="fas fa-map-marker-alt"></i>
@@ -234,7 +238,7 @@
                     </div>
 
                     <!-- Social Icons -->
-                    <div>
+                    <div class="contact-social">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
@@ -244,7 +248,7 @@
                 </div>
 
                 <!-- Join ACM Form -->
-                <div>
+                <div class="contact-form">
                     <h3>Join ACM YCCE</h3>
                     <form>
                         <div><input type="text" placeholder="Your Name" required></div>
@@ -284,9 +288,9 @@
     <!-- ================= FOOTER SECTION ================= -->
     <footer>
         <div>
-            <div>
+            <div class="footer-content">
                 <!-- Footer Branding -->
-                <div>
+                <div class="footer-brand">
                     <h3>ACM YCCE</h3>
                     <p>Advancing Computing as a Science & Profession at Your College of Computer Engineering.</p>
                     <div>
@@ -295,7 +299,7 @@
                 </div>
 
                 <!-- Footer Links -->
-                <div>
+                <div class="footer-links">
                     <h3>Quick Links</h3>
                     <ul>
                         <li><a href="#home">Home</a></li>
@@ -336,7 +340,7 @@
 
             <!-- Footer Copyright -->
             <div>
-                <p>&copy; 2023 ACM YCCE Student Chapter. All Rights Reserved.</p>
+                <p class="u-align-text--center">&copy; 2023 ACM YCCE Student Chapter. All Rights Reserved.</p>
                 <p>Part of the <a href="https://www.acm.org/" target="_blank">Association for Computing Machinery</a></p>
             </div>
         </div>
